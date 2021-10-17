@@ -3,7 +3,7 @@ import './Footer.css';
 export default function Footer() {
     return (
         <div className='footer'>
-            <p className='text-copy'>copy right {'(C)'} Brahim Ben Souidene</p>
+            <p className='text-copy'>copyright {'(C)'} Brahim Ben Souidene</p>
         </div>
     )
 }

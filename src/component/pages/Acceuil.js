@@ -13,7 +13,7 @@ export default function Acceuil() {
         <div className='page-acceuil'>
             <div className='container'>
                 <img className='logo' src={logo} alt='logo'/>
-                <h1 className='title'>Pics rate</h1>
+                {/* <h1 className='title'>Pics rate</h1> */}
                 <p className='description'>
                     Pics Rate {' ( or pictures rating ) '} is a great app that helps you to choose the perfect picture. 
                     Usualy people get confused about which picture shoeld use in specific context.
@@ -24,14 +24,16 @@ export default function Acceuil() {
             </div>
             <div className='app-links'>
                 <div className='btns-section'>
-                    <p className='first-text'>Sometimes choosing the right picture may give you a headeck!</p>
+                    <p className='first-text'>Sometimes choosing the right picture may give you a headache!</p>
                     <p className='second-text'>Let peoples help you with that {':)'}</p>
                     <p className='third-text'>Download the app now!</p>
                     <div className='btns-download'>
-                            <img src={imgAppStore} alt='appStore' className='btn-appStore'/>
-                        
+                        <a href={'https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react'} target='_blank' rel="noreferrer">
+                            <img src={imgAppStore} alt='appStore' className='btn-appStore' />
+                        </a>
+                        <a href={'https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react'} target='_blank' rel="noreferrer">
                             <img src={imgPlayStore} alt='appStore' className='btn-appStore'/>
-                        
+                        </a>
                     </div>
                 </div>
             </div>
@@ -43,8 +45,8 @@ export default function Acceuil() {
                     <p className='auth-text'>Democracy is the answer</p>
                 </div>
                     <ButtonContainer>
-                        <Link to='/signup'>
-                            Sign up now
+                        <Link to='/signup' className="signup_link">
+                            Create an account
                         </Link>
                     </ButtonContainer>
             </div>
@@ -63,6 +65,18 @@ export default function Acceuil() {
                     <img src={iconDating} alt='business' className='icon'/>
                     <h3 className='context-title'>dating</h3>
                     <p className='description'>tinder, snapshat,...</p>
+                </div>
+            </div>
+            <div className='tuto_video'>
+                <div className="info">
+                    <h1 className='info-title'>Pics Rate Video;</h1>
+                    <p className='paragraphe'>Watching this video will encourage you to use the app,</p>
+                    <p className='paragraphe'>Having fun and getting confidence in yourself is granted,</p>
+                    <p className='paragraphe'>So what are you waiting for!!</p>
+                    <p className='paragraphe'>Feel free try it {';)'}</p>
+                </div>
+                <div className="video-section">
+                    <video src="./video/record.mp4" type="video/mp4" className='video' controls/>
                 </div>
             </div>
         </div>
