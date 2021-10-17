@@ -28,12 +28,10 @@ export default function Acceuil() {
                     <p className='second-text'>Let peoples help you with that {':)'}</p>
                     <p className='third-text'>Download the app now!</p>
                     <div className='btns-download'>
-                        <a href={'#'}>
                             <img src={imgAppStore} alt='appStore' className='btn-appStore'/>
-                        </a>
-                        <a href={'#'}>
+                        
                             <img src={imgPlayStore} alt='appStore' className='btn-appStore'/>
-                        </a>
+                        
                     </div>
                 </div>
             </div>
