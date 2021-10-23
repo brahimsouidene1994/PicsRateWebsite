@@ -9,6 +9,10 @@ import iconDating from '../../gender-svgrepo-com.svg';
 import { ButtonContainer } from '../layout/Button';
 import { Link } from 'react-router-dom';
 export default function Acceuil() {
+    React.useEffect(()=>{
+        window.alert("Sorry!! I'm still working on deployment phase but you can watch the pre release of the app if you scroll down :) & if you want to contact me this is my email souidenebrahim@gmail.com");
+    },[])
+    
     return (
         <div className='page-acceuil'>
             <div className='container'>
@@ -28,12 +32,12 @@ export default function Acceuil() {
                     <p className='second-text'>Let peoples help you with that {':)'}</p>
                     <p className='third-text'>Download the app now!</p>
                     <div className='btns-download'>
-                        <a href={'https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react'} target='_blank' rel="noreferrer">
+                         {/* <a href='#' target='_blank' rel="noreferrer"> */} 
                             <img src={imgAppStore} alt='appStore' className='btn-appStore' />
-                        </a>
-                        <a href={'https://www.pluralsight.com/guides/how-to-render-%22a%22-with-optional-href-in-react'} target='_blank' rel="noreferrer">
-                            <img src={imgPlayStore} alt='appStore' className='btn-appStore'/>
-                        </a>
+                        {/* </a>
+                        <a href='#' target='_blank' rel="noreferrer"> */}
+                            <img src={imgPlayStore} alt='appStore' className='btn-appStore' />
+                        {/* </a> */}
                     </div>
                 </div>
             </div>
@@ -67,11 +71,11 @@ export default function Acceuil() {
                     <p className='description'>tinder, snapshat,...</p>
                 </div>
             </div>
-            <div className='tuto_video'>
+            <div className='tuto_video' id="presentation_app">
                 <div className="info">
                     <h1 className='info-title'>Pics Rate Video;</h1>
                     <p className='paragraphe'>Watching this video will encourage you to use the app,</p>
-                    <p className='paragraphe'>Having fun and getting confidence in yourself is granted,</p>
+                    <p className='paragraphe'>Having fun and getting confidence in yourself is garanted,</p>
                     <p className='paragraphe'>So what are you waiting for!!</p>
                     <p className='paragraphe'>Feel free try it {';)'}</p>
                 </div>
